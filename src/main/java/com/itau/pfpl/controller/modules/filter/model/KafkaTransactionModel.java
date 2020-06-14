@@ -1,9 +1,6 @@
 package com.itau.pfpl.controller.modules.filter.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * Model designed to reflect the kafka message
@@ -12,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class KafkaTransactionModel {
   private String cpf;
   private String transactionId;
